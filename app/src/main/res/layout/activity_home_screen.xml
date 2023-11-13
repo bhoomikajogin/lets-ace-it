@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.letsACEit.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+            <Button
+                android:id="@+id/dest"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:text="Search By Destination"
+                android:textColor="@color/black"
+                android:backgroundTint="#68FCAF86"/>
+            <Button
+                android:id="@+id/seri"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-6dp"
+                android:text="Search By Number series"
+                android:textColor="@color/black"
+                android:backgroundTint="#5ED56C52"/>
+            <Button
+                android:id="@+id/vehi"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:text="search by vehicle number"
+                android:textColor="@color/black"
+                android:backgroundTint="#41C6945D"/>
+            <Button
+                android:id="@+id/help"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="helpline"
+                android:textColor="@color/black"
+                android:backgroundTint="#57D18E3C"/>
+
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>
